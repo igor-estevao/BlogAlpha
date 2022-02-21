@@ -1,0 +1,13 @@
+<script type="text/javascript" src = "../../assets/froala_editor.pkgd.min.js"></script>
+<h1 class="text-center mt-4">Listing all articles</h1>
+<div class="container">
+  <% @articles.each do |article| %>
+    <div class="row justify-content-md-center">
+      <div class="col-8 mt-4">
+        <%= render "article", article: article %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<br>
+<%= link_to 'Create New Article', new_article_path %> | <%= link_to 'Back to Home', root_path %>

@@ -1,0 +1,11 @@
+<% if errors.any? %>
+  <div class="alert alert-warning alert-dismissible">
+    <h4>There <%= pluralize(errors.count, "error") %></h4>
+    <ul>
+      <% errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+    <button type="button" class="dismiss-alert btn-close" aria-label="Close"></button>
+  </div>
+<% end %>

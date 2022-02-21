@@ -1,0 +1,46 @@
+// this file will be used to ovewrite the default styles of the bootstrap framework
+a {
+  text-decoration: none !important;
+}
+
+#home-container {
+  margin-top: 25px;
+}
+
+#home-jumbotron {
+  background-image: asset-url('splash-home.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background-color: grey;
+  background: linear-gradient(to right, rgb(71, 71, 71), #818181);
+}
+
+/* Alter btn class, so it works in form-group row */
+.btn {
+  width: auto;
+}
+
+.truncate {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
