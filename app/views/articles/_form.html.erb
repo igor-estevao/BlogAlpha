@@ -1,5 +1,4 @@
 <div class="container">
- <%= tinymce_assets %>
   <div class="row justify-content-center">
     <div class="col-10">
       <%= render partial: "layouts/errors", locals: { errors: @article.errors } %>
@@ -12,6 +11,18 @@
         </div>
         <br>
         <div class="form-group row">
+          <% if @article.main_image.attached? %>
+            <%= image_tag @article.main_image, style: "width: 200px; display:block"%>
+          <% end %>
+          <%= f.label :main_image %>
+          <%= f.file_field :main_image, class: "form-control-file" %>
+        </div>
+        <br>
+        
+        <% if false %>
+          
+        
+        <div class="form-group row">
           <%= f.label :description, class: "col-2 col-form-label text-light" %>
           <div class="col-10">
             <%#= render partial: "edition_bar" %>
@@ -20,6 +31,8 @@
           </div>
         </div>
         <br>
+        <% end %>
+
         <div class="form-group row justify-content-center">
           <%= f.submit class: "btn btn-outline-light btn-lg" %>
         </div>

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  article_id: 
+  content: MyText
+  is_image: false
+  image_id: 
+  caption: MyString
+  position_index: 
+  location: MyString
+
+two:
+  article_id: 
+  content: MyText
+  is_image: false
+  image_id: 
+  caption: MyString
+  position_index: 
+  location: MyString
